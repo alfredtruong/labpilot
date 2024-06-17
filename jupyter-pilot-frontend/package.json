@@ -70,8 +70,8 @@
     "highlight.js": "11.8.0",
     "dompurify": "3.0.5"
   },
-  "devDependencies": {
-    "@jupyterlab/builder": "3.6.6",
+"devDependencies": {
+    "@jupyterlab/builder": "^3.6.7",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.14.0",

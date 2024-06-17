@@ -24,7 +24,7 @@ Give the agent a goal, and let it do its magic. (This works best with gpt4)
 ## How to build and run
 Right now the easiest way to use this extension is to build (it takes a while the first time) and run the Dockerfile:
 
-    docker build . --tag='labpilot'
+    docker build . --tag="labpilot"
     docker run -d --restart=unless-stopped -p 8888:8888 -p 8080:8080 -p 8081:8081 -e JUPYTER_TOKEN=<TOKEN> --name labpilot labpilot
 
 
@@ -33,3 +33,7 @@ Right now the easiest way to use this extension is to build (it takes a while th
 - Next, navigate to Settings > Advanced Setting Editor > Labpilot Settings - and enter your OpenAI api key (remember to add billing information to OpenAI since labpilot uses the chat completion api, which costs money): 
 ![Settings](docs/settings.png)
 - After that I would follow the tutorial in the `tutorial.ipynb` file for a short introduction to labpilots features: ![Tutorial](docs/tutorial.png)
+
+## How to move Docker files
+https://gist.github.com/JanoPL/917c378a1eb662a3b41d5b2d0b1e8aef
+https://gist.github.com/cbuckowitz/1d58d40f217dfb21f0aa54517583f8d3

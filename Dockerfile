@@ -18,15 +18,16 @@ RUN DEBIAN_FRONTEND=noninteractive apt update && apt install -y --no-install-rec
 
 RUN apt-get update && apt-get install -y curl gnupg lsb-release
 
-
+# Install a specific version of jupytext
 RUN pip install \
     jupyterlab==3.6.4 \
-    jupytext \
+    jupytext==1.14.0 \
     jupyter-packaging
 
+# Install a specific version of Node.js and npm
 RUN npm cache clean -f
 RUN npm install -g n
-RUN n stable
+RUN n 16.14.0
 
 RUN npm install -g typescript@4.1.3
 
